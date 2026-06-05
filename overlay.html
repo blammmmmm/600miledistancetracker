@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>600 Mile Ride Overlay</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="overlay-body">
+  <main id="overlay" class="ride-card visible">
+    <div class="bg-pattern"></div>
+
+    <section class="top-title">600 MILE RIDE</section>
+
+    <section class="main-distance">
+      <span id="milesDone">0.0</span>
+      <span class="slash">/</span>
+      <span>600</span>
+      <span class="unit">MI</span>
+    </section>
+
+    <section class="bottom-row">
+      <div class="bottom-stat">
+        <span id="milesLeft">600.0</span> MI LEFT
+      </div>
+
+      <div class="status-wrap">
+        <span id="statusDot" class="status-dot riding"></span>
+        <span id="statusText">RIDING</span>
+      </div>
+
+      <div class="bottom-stat updated">
+        UPDATED <span id="updatedAgo">JUST NOW</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="firebase-config.js"></script>
+  <script type="module" src="overlay.js"></script>
+</body>
+</html>
